@@ -11,7 +11,7 @@ window.legacy.numberGreaterThanOrEqualTo = function() {
     console.info('numberGreaterThanOrEqualTo(NaN, NaN)', numberGreaterThanOrEqualTo(NaN, NaN));
 };
 
-},{"./numberGreaterThanOrEqualTo":"c:\\Web\\AddingModernTwistToLegacyApps\\BrowserifyCommonJs\\js\\library\\src\\numberGreaterThanOrEqualTo.js"}],"c:\\Web\\AddingModernTwistToLegacyApps\\BrowserifyCommonJs\\js\\library\\src\\numberGreaterThanOrEqualTo.js":[function(require,module,exports){
+},{"./numberGreaterThanOrEqualTo":"C:\\Web\\AddingModernTwistToLegacyApps\\BrowserifyCommonJs\\js\\library\\src\\numberGreaterThanOrEqualTo.js"}],"C:\\Web\\AddingModernTwistToLegacyApps\\BrowserifyCommonJs\\js\\library\\src\\numberGreaterThanOrEqualTo.js":[function(require,module,exports){
 var numberGreaterThanOrEqualTo = function(value, testValue) {
     if (isNaN(value)) {
         return false;
