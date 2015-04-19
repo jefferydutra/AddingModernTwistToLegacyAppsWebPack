@@ -1,6 +1,6 @@
 {
-  "name": "SmartSuite",
-  "version": "8.6.0",
+  "name": "BrowseriifySectionOfTalk",
+  "version": "0.0.1",
   "description": "",
   "main": "tooltip.js",
   "scripts": {
