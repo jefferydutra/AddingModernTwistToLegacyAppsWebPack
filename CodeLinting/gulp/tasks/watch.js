@@ -1,10 +1,5 @@
-﻿/* Notes:
-   - gulp/tasks/browserify.js handles js recompiling with watchify
-*/
-var gulp = require('gulp');
+﻿var gulp = require('gulp');
 
-gulp.task('watch', ['setWatch', 'build'], function (callback) {
-    // Watchify will watch and recompile our JS, so no need to gulp.watch it
-    gulp.watch("./js/library/src/**/*.js", ['jshint']);
-
+gulp.task('watch', function() {
+    gulp.watch('./js/library/src/**/*.js', ['jshint']);
 });
