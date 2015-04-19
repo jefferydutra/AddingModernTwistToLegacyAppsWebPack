@@ -1,7 +1,11 @@
 var numberGreaterThanOrEqualTo = require('./numberGreaterThanOrEqualTo');
 
-console.log(numberGreaterThanOrEqualTo(1,2));
+window.legacy = {};
 
-console.log(numberGreaterThanOrEqualTo(1,'dd'));
-
-console.log(numberGreaterThanOrEqualTo(4,2));
+window.legacy.numberGreaterThanOrEqualTo = function() {
+    console.info('numberGreaterThanOrEqualTo(1, 2)', numberGreaterThanOrEqualTo(1, 2));
+    console.info('numberGreaterThanOrEqualTo(1, "dd")', numberGreaterThanOrEqualTo(1, 'dd'));
+    console.info('numberGreaterThanOrEqualTo(4, 2)', numberGreaterThanOrEqualTo(4, 2));
+    console.info('numberGreaterThanOrEqualTo(4, 4)', numberGreaterThanOrEqualTo(4, 4));
+    console.info('numberGreaterThanOrEqualTo(NaN, NaN)', numberGreaterThanOrEqualTo(NaN, NaN));
+};

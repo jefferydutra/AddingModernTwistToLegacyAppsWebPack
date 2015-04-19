@@ -1,21 +1,10 @@
-﻿/* browserify task
-   ---------------
-   Bundle javascripty things with browserify!
-
-   This task is set up to generate multiple separate bundles, from
-   different sources, and to use Watchify when run from the default task.
-
-   See browserify.bundleConfigs in gulp/config.js
-*/
-
-var browserify = require('browserify');
+﻿var browserify = require('browserify');
 var watchify = require('watchify');
 var bundleLogger = require('../util/bundleLogger');
 var gulp = require('gulp');
 var handleErrors = require('../util/handleErrors');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-var reactify = require('reactify')
 var config = require('../config').browserify;
 
 
@@ -36,7 +25,6 @@ gulp.task('browserify', function (callback) {
             // Enable source maps!
             debug: isDebug
         });
-        bundler.transform(reactify);
 
         var bundle = function () {
             // Log when bundling starts
