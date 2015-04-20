@@ -17,6 +17,7 @@ var CharacterStore = {
   getAll: function() {
     return _characters;
   },
+
   getCharacterCount: function() {
     return _characters.length;
   }

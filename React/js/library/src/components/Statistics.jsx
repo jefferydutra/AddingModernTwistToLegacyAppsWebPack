@@ -15,7 +15,7 @@ var Statistics = React.createClass({
   render: function() {
     return (
       <div>
-        <div className="label label-info pull-right">
+        <div className='label label-success pull-right'>
           Matching heroes
           <span className="badge">
             {this.state.characterCount}
