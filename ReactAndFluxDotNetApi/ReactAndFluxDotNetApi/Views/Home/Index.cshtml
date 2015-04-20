@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div id="placeHolder">
+
+</div>
+
+@section Scripts
+{
+    <script src="@Url.Content("~/dist/src/app.js")"></script>
+    <script>
+        legacy.loadApp('placeHolder');
+    </script>
+}
