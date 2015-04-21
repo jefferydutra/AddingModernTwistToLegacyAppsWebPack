@@ -111,8 +111,22 @@
     <Content Include="gulp\tasks\watch.js" />
     <Content Include="gulp\util\bundleLogger.js" />
     <Content Include="gulp\util\handleErrors.js" />
+    <Content Include="js\library\src\actions\CharacterActionCreators.js" />
+    <Content Include="js\library\src\components\App.jsx" />
+    <Content Include="js\library\src\components\CharacterRow.jsx" />
+    <Content Include="js\library\src\components\DataGrid.jsx" />
+    <Content Include="js\library\src\components\ErrorAlert.jsx" />
+    <Content Include="js\library\src\components\FilterRow.jsx" />
+    <Content Include="js\library\src\components\main.jsx" />
+    <Content Include="js\library\src\components\SelectInput.jsx" />
+    <Content Include="js\library\src\components\Statistics.jsx" />
+    <Content Include="js\library\src\constants\ApiConstants.js" />
+    <Content Include="js\library\src\constants\CharacterConstants.js" />
+    <Content Include="js\library\src\constants\PayloadSources.js" />
     <Content Include="js\library\src\dispatcher\AppDispatcher.js" />
+    <Content Include="js\library\src\stores\CharacterStore.js" />
     <Content Include="js\library\src\utils\ajaxUtils.js" />
+    <Content Include="js\library\src\utils\CharacterApiUtils.js" />
     <Content Include="js\library\src\utils\validators.js" />
     <Content Include="js\vendor\bootstrap.js" />
     <Content Include="js\vendor\bootstrap.min.js" />
@@ -120,6 +134,7 @@
     <Content Include="js\vendor\es5shim.min.js" />
     <Content Include="js\vendor\html5shivprintshiv.js" />
     <Content Include="js\vendor\respond.min.js" />
+    <Content Include=".jscsrc" />
     <None Include="js\vendor\jquery-1.10.2.intellisense.js" />
     <Content Include="js\vendor\jquery-1.10.2.js" />
     <Content Include="js\vendor\jquery-1.10.2.min.js" />
@@ -167,9 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="js\library\src\action\" />
-    <Folder Include="js\library\src\constants\" />
-    <Folder Include="js\library\src\stores\" />
     <Folder Include="js\library\tests\" />
   </ItemGroup>
   <PropertyGroup>
