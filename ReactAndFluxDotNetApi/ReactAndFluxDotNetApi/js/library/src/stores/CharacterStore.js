@@ -1,27 +1,51 @@
-var _characters = [
-  {
-    name: 'Wolverine',
-    numberOfComics: 1794,
-    numberOfSeries: 436,
-    profilePage: 'http://marvel.com/characters/66/wolverine?utm_campaign=apiRef&utm_source=a346c95988e8d81ce986d98fbd99033a'
-  },
-  {
-    name: 'Cyclops',
-    numberOfComics: 697,
-    numberOfSeries: 214,
-    profilePage: 'http://marvel.com/characters/10/cyclops?utm_campaign=apiRef&utm_source=a346c95988e8d81ce986d98fbd99033a'
-  }
-];
+var AppDispatcher = require('../dispatcher/AppDispatcher');
+var EventEmitter = require('events').EventEmitter;
+var CharacterConstants = require('../constants/CharacterConstants');
+var assign = require('object-assign');
 
-var CharacterStore = {
+var CHANGE_EVENT = 'change';
+var _characters = [];
+
+var CharacterStore = assign({}, EventEmitter.prototype, {
+
+  init: function(characters) {
+    characters.forEach(function(character) {
+      _characters[character.id] = character;
+    }, this);
+  },
+
   getAll: function() {
     return _characters;
   },
 
   getCharacterCount: function() {
     return _characters.length;
+  },
+
+  emitChange: function() {
+    this.emit(CHANGE_EVENT);
+  },
+
+  addChangeListener: function(callback) {
+    this.on(CHANGE_EVENT, callback);
+  },
+
+  removeChangeListener: function(callback) {
+    this.removeChangeListener(CHANGE_EVENT, callback);
   }
 
-};
+});
+
+AppDispatcher.register(function(payload) {
+  var action = payload.action;
+
+  switch (action.type) {
+    case CharacterConstants.ActionTypes.RECEIVE_CHARACTERS:
+      CharacterStore.init(action.characters);
+      CharacterStore.emitChange();
+      break;
+
+  }
+});
 
 module.exports = CharacterStore;

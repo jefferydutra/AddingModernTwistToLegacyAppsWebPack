@@ -6,10 +6,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "jquery": "./js/vendor/jquery.js",
+    "jquery-ui": "./js/vendor/jquery-ui.js"
+  },
+  "browserify-shim": {
+    "jquery": "global:$",
+    "jquery-ui": "global:jquery-ui"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browserify": "^7.0.2",
+    "browserify-shim": "^3.8.1",
     "gulp": "^3.8.10",
     "gulp-jshint": "^1.9.0",
     "gulp-jscs": "^1.5.2",

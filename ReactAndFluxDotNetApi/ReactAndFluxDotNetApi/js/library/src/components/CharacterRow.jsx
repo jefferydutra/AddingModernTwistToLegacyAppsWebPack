@@ -7,7 +7,13 @@ var CharacterRow = React.createClass({
         <td>{this.props.character.name}</td>
         <td>{this.props.character.numberOfComics}</td>
         <td>{this.props.character.numberOfSeries}</td>
-        <td>{this.props.character.profilePage}</td>
+        <td>
+          <a
+            href={this.props.character.profilePage}
+            target='_blank'>
+            Bio Page
+          </a>
+        </td>
       </tr>
     );
   }

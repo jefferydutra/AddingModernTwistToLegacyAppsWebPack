@@ -1,8 +1,12 @@
 var $ = require('jquery');
+var CharacterConstants = require('../constants/CharacterConstants');
 
 var CharacterApiUtils = {
-  getCharacters: function() {
-    $.get();
+  getCharacters: function(successCallback) {
+    $.get(CharacterConstants.ApiEndPoints.CHARACTER_GET)
+      .done(function(data) {
+        successCallback(data);
+      });
   }
 };
 

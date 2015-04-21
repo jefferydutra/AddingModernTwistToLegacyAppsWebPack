@@ -1,3 +1,3 @@
 module.exports = {
-  API_ROOT: '../api'
+  API_ROOT: rootUrl + 'api' //jshint ignore: line
 };

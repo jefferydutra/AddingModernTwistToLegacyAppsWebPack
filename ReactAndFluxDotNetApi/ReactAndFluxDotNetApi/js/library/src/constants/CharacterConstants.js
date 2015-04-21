@@ -1,7 +1,11 @@
 var ApiConstants = require('./ApiConstants');
+var keymirror = require('keymirror');
 
 module.exports = {
   ApiEndPoints: {
-    AREA_GET: ApiConstants + '/Character'
-  }
+    CHARACTER_GET: ApiConstants.API_ROOT + '/Character'
+  },
+  ActionTypes: keymirror({
+    RECEIVE_CHARACTERS: null
+  })
 };

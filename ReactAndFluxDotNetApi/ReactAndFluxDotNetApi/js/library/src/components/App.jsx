@@ -2,6 +2,9 @@ var React = require('React');
 var FilterRow = require('./FilterRow.jsx');
 var Statistics = require('./Statistics.jsx');
 var DataGrid = require('./DataGrid.jsx');
+var CharacterActionCreators = require('../actions/CharacterActionCreators');
+
+CharacterActionCreators.loadAll();
 
 var App = React.createClass({
   render: function() {

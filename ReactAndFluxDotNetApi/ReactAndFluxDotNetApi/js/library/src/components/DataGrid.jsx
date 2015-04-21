@@ -7,7 +7,7 @@ function getCharacters() {
 }
 
 function toCharacterRow(character) {
-  return <CharacterRow key={character.name} character={character} />
+  return <CharacterRow key={character.name} character={character}/>
 }
 
 var DataGrid = React.createClass({
@@ -15,6 +15,18 @@ var DataGrid = React.createClass({
     return {
       characters: getCharacters()
     }
+  },
+
+  componentWillUnmount: function() {
+    CharacterStore.addChangeListener(this._onChange);
+  },
+
+  componentWillUnmount: function() {
+    CharacterStore.removeChangeListener(this._onChange)
+  },
+
+  _onChange: function() {
+    this.setState({characters: getCharacters()});
   },
 
   render: function() {
@@ -30,7 +42,7 @@ var DataGrid = React.createClass({
         </tr>
         </thead>
         <tbody>
-          {characterRows}
+        {characterRows}
         </tbody>
       </table>
     );
