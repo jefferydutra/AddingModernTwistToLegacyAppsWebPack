@@ -13,3 +13,4 @@ This app uses JSHint and JSCS to lint JavaScript code, and Browserify to build y
 ## References
 * [Browserify] (http://browserify.org/)
 * [Gulp] (http://gulpjs.com/)
+* [Gulp Recipes] (https://github.com/gulpjs/gulp/tree/master/docs/recipes)
