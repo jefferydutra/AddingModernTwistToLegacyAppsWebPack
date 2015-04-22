@@ -15,12 +15,12 @@ var FilterRow = React.createClass({
         <form className='form-inline'>
           <label>
             <select
-              value=''
+              defaultValue=''
               className='form-control input-sm'>
-              <option value="" disabled selected>Select hero type ..</option>
-              <option>Hero</option>
-              <option>Villain</option>
-              <option>A little bit of both</option>
+              <option value='' disabled>Select hero type ..</option>
+              <option value='1'>Hero</option>
+              <option value='3'>Villain</option>
+              <option value='3'>A little bit of both</option>
             </select>
           </label>
           <button

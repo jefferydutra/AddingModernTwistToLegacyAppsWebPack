@@ -17,7 +17,7 @@ var DataGrid = React.createClass({
     }
   },
 
-  componentWillUnmount: function() {
+  componentWillMount: function() {
     CharacterStore.addChangeListener(this._onChange);
   },
 

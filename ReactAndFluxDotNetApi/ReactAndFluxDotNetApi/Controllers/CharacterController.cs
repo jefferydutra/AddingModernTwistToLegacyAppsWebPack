@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using System.Linq;
+using System.Web.Http;
 using ReactAndFluxDotNetApi.Service;
 using System.Collections.Generic;
 using ReactAndFluxDotNetApi.Model;
@@ -13,6 +14,12 @@ namespace ReactAndFluxDotNetApi.Controllers
 
         public IEnumerable<Character> Get(){
             return _characterService.GetAll();
+        }
+        public IEnumerable<Character> Get(int id)
+        {
+            return _characterService
+                    .GetAll()
+                    .Where(x => (int)x.CharacterType == id);
         }
     }
 }

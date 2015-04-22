@@ -6,5 +6,12 @@ namespace ReactAndFluxDotNetApi.Model{
         public int NumberOfComics { get; set; }
         public int NumberOfSeries { get; set; }
         public string ProfilePage { get; set; }
+        public CharacterType CharacterType { get; set; }
+    }
+
+    public enum CharacterType{
+        Hero = 1,
+        Villian = 2,
+        GoesBothWays =3
     }
 }
