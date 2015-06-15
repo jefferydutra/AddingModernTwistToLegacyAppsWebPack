@@ -60,5 +60,5 @@
   "requirePaddingNewLinesAfterBlocks": true,
   "safeContextKeyword": "_this",
   "validateQuoteMarks": "'",
-  "validateIndentation": 4
+  "validateIndentation": 2
 }
