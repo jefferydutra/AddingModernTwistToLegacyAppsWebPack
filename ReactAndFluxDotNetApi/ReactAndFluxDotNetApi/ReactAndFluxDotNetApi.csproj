@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -98,19 +99,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="gulpfile.js" />
-    <Content Include="gulp\config.js" />
-    <Content Include="gulp\tasks\browserify.js" />
-    <Content Include="gulp\tasks\build.js" />
-    <Content Include="gulp\tasks\buildForRelease.js" />
-    <Content Include="gulp\tasks\default.js" />
-    <Content Include="gulp\tasks\jshint.js" />
-    <Content Include="gulp\tasks\setDebug.js" />
-    <Content Include="gulp\tasks\setRelease.js" />
-    <Content Include="gulp\tasks\setWatch.js" />
-    <Content Include="gulp\tasks\watch.js" />
-    <Content Include="gulp\util\bundleLogger.js" />
-    <Content Include="gulp\util\handleErrors.js" />
     <Content Include="js\library\src\actions\CharacterActionCreators.js" />
     <Content Include="js\library\src\components\App.jsx" />
     <Content Include="js\library\src\components\CharacterRow.jsx" />
@@ -135,6 +123,7 @@
     <Content Include="js\vendor\html5shivprintshiv.js" />
     <Content Include="js\vendor\respond.min.js" />
     <Content Include=".jscsrc" />
+    <Content Include="webpack.config.js" />
     <None Include="js\vendor\jquery-1.10.2.intellisense.js" />
     <Content Include="js\vendor\jquery-1.10.2.js" />
     <Content Include="js\vendor\jquery-1.10.2.min.js" />
