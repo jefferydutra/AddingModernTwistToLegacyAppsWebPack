@@ -8,6 +8,9 @@ There are four parts to the talk with their own web App
 * React
 * React, Flux and ASP.Net API
 
+## Browserify Version of this codebase
+*https://github.com/jefferydutra/AddingModernTwistToLegacyApps
+
 ## Webpack vs Browserify
 React Podcast Webpack vs. Browserify (http://reactpodcast.com/2015/06/webpack-vs-browserify/)
 
