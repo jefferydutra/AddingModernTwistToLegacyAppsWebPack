@@ -8,6 +8,9 @@ There are four parts to the talk with their own web App
 * React
 * React, Flux and ASP.Net API
 
+## Webpack vs Browserify
+React Podcast Webpack vs. Browserify (http://reactpodcast.com/2015/06/webpack-vs-browserify/)
+
 ## Presentation
 [Slideshare](http://www.slideshare.net/JeffDutra/just-in-case-adding-a-modern-twist-to-legacy-web-applications)
 
